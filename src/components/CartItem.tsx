@@ -14,6 +14,7 @@ type CartItemProps ={
 
 
 const CartItem = ({id,quantity}: CartItemProps) => {
+    
     const {removeFromCart} = useShoppingCart();
     const item = storeItems.find(item => item.id === id);
 
